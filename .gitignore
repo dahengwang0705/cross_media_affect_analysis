@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# ------------------------ CUSTOM -------------------------- #
+# Data files folder inside develop folder
+develop/data
+# Temporary files folder inside develop folder
+develop/tmp
