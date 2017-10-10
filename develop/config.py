@@ -16,6 +16,9 @@ TMP_DIR = './tmp'
 # Directory for figures
 FIG_DIR = './fig'
 
+# Directory for human-readable data
+HR_DIR = './hr'
+
 # Directory for news and tweets data by Dr. Meng Jiang
 # DEPRECATED
 MENG_NEWS_TWEETS_DIR = os.path.join(DATA_DIR, 'raw-news_tweets-meng')
@@ -32,11 +35,8 @@ NEWS_TWEETS_DDL_FILE = os.path.join(DATA_DIR, 'original-news_tweets.schema.sql')
 # SQLite db for raw news and tweets data (provided by Dr. Meng Jiang)
 NEWS_TWEETS_DB_FILE = os.path.join(DATA_DIR, 'original-news_tweets.db')
 
-# Dataframe of news over selected period [2015-01-01, 2015-03-21]
+# Dataframe of news over selected period [2014-11-18, 2015-04-14]
 NEWS_PERIOD_DF_PKL = os.path.join(DATA_DIR, 'news-period.df.pkl')
-
-# Dataframe of tweets over selected period [2015-01-01, 2015-03-21]
-TWEETS_PERIOD_DF_PKL = os.path.join(DATA_DIR, 'tweets-period.df.pkl')
 
 '''
 Misc
