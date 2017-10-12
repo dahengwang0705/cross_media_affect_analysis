@@ -35,8 +35,12 @@ NEWS_TWEETS_DDL_FILE = os.path.join(DATA_DIR, 'original-news_tweets.schema.sql')
 # SQLite db for raw news and tweets data (provided by Dr. Meng Jiang)
 NEWS_TWEETS_DB_FILE = os.path.join(DATA_DIR, 'original-news_tweets.db')
 
-# Dataframe of news over selected period [2014-11-18, 2015-04-14]
+# Pickle if dataframe of news over selected period [2014-11-18, 2015-04-14]
 NEWS_PERIOD_DF_PKL = os.path.join(DATA_DIR, 'news-period.df.pkl')
+
+# Pickle of manually selected topics information with associated news and tweets native_id
+TOPICS_LST_PKL = os.path.join(DATA_DIR, 'topics.lst.pkl')
+
 
 '''
 Misc
@@ -53,7 +57,7 @@ MANUALLY_SELECTED_TOPICS_LST = [
     {'category': 'social', 'name': 'Hong_Kong_protests', 'keywords_lst': ['Hong Kong']},
     {'category': 'social', 'name': 'Sony_cyberattack', 'keywords_lst': ['Sony']},
     {'category': 'social', 'name': 'Bill_Cosby_sexual_assault_allegations ', 'keywords_lst': ['Bill Cosby']},
-    {'category': 'social', 'name': 'SpaceX_fails_rocket_landing ', 'keywords_lst': ['SpaceX']},
+    {'category': 'social', 'name': 'SpaceX_fails_rocket_landing', 'keywords_lst': ['SpaceX']},
     {'category': 'social', 'name': 'Brian_Williams_fake_war_story  ', 'keywords_lst': ['Brian Williams']},
     {'category': 'entertainment', 'name': 'Oscar', 'keywords_lst': ['Oscar']},
     {'category': 'entertainment', 'name': 'Super_Bowl', 'keywords_lst': ['Super Bowl']},
@@ -66,6 +70,6 @@ MANUALLY_SELECTED_TOPICS_LST = [
     {'category': 'disaster', 'name': 'Vanuatu_Cyclone_Pam', 'keywords_lst': ['Vanuatu', 'Cyclone']},
     {'category': 'disaster', 'name': 'Malaysia_Airlines_Flight_MH370', 'keywords_lst': ['370']},
     {'category': 'holiday', 'name': 'Thanksgiving', 'keywords_lst': ['Thanksgiving']},
-    {'category': 'holiday', 'name': 'Black_Friday_and_Cyber_Monday', 'keywords_lst': ['Black Friday', 'Cyber Monday']},
-    {'category': 'holiday', 'name': 'Christmas ', 'keywords_lst': ['Christmas ']},
-    {'category': 'holiday', 'name': 'New_Year ', 'keywords_lst': ['New Year ']}]
+    {'category': 'holiday', 'name': 'Black_Friday_and_Cyber_Monday', 'keywords_lst': [('Black Friday', 'Cyber Monday')]},
+    {'category': 'holiday', 'name': 'Christmas', 'keywords_lst': ['Christmas']},
+    {'category': 'holiday', 'name': 'New_Year', 'keywords_lst': ['New Year']}]
