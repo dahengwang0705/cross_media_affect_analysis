@@ -26,6 +26,9 @@ MENG_NEWS_TWEETS_DIR = os.path.join(DATA_DIR, 'raw-news_tweets-meng')
 # Directory for original news and tweets data
 ORIGINAL_NEWS_TWEETS_DIR = os.path.join(DATA_DIR, 'raw-news_tweets-original')
 
+# Directory for topic_news and topic_tweets docs
+TOPICS_DOCS_DIR = os.path.join(HR_DIR, 'topics_docs')
+
 '''
 Files
 '''
