@@ -105,3 +105,6 @@ ENV/
 develop/data
 # Temporary files folder inside develop folder
 develop/tmp
+# Folder for large topic_news and topic_tweets docs.
+develop/hr/topics_docs/
+
