@@ -29,6 +29,11 @@ ORIGINAL_NEWS_TWEETS_DIR = os.path.join(DATA_DIR, 'raw-news_tweets-original')
 # Directory for topic_news and topic_tweets docs
 TOPICS_DOCS_DIR = os.path.join(HR_DIR, 'topics_docs')
 
+# Directory for EXTERNAL Hedonometer data files
+# http://hedonometer.org/index.html
+HED_DATA_DIR = os.path.join(DATA_DIR, 'hedonometer')
+
+
 '''
 Files
 '''
@@ -38,11 +43,26 @@ NEWS_TWEETS_DDL_FILE = os.path.join(DATA_DIR, 'original-news_tweets.schema.sql')
 # SQLite db for raw news and tweets data (provided by Dr. Meng Jiang)
 NEWS_TWEETS_DB_FILE = os.path.join(DATA_DIR, 'original-news_tweets.db')
 
-# Pickle if dataframe of news over selected period [2014-11-18, 2015-04-14]
+# Pickle of dataframe of news over selected period [2014-11-18, 2015-04-14]
 NEWS_PERIOD_DF_PKL = os.path.join(DATA_DIR, 'news-period.df.pkl')
 
 # Pickle of manually selected topics information with associated news and tweets native_id
 TOPICS_LST_PKL = os.path.join(DATA_DIR, 'topics.lst.pkl')
+
+# JSON file for Hedonometer happiness words
+# Visualization: http://hedonometer.org/words.html
+# Download: http://hedonometer.org/api/v1/timeseries/?format=json
+HED_WORDS_JSON_FILE = os.path.join(HED_DATA_DIR, 'labMT_words.json')
+
+# Pickle of dataframe for complete Hedonometer happiness words information
+HED_WORDS_DF_PKL = os.path.join(DATA_DIR, 'hed_words.df.pkl')
+
+# Pickle of dataframe for Hedonometer selected words
+SHED_WORDS_DF_PKL = os.path.join(DATA_DIR, 'shed_words.df.pkl')
+
+# Pickles of dicts for mapping between selected word and word_ind
+SHED_WORD_IND_DICT_PKL = os.path.join(DATA_DIR, 'shed_word-ind.dict.pkl')
+IND_SHED_WORD_DICT_PKL = os.path.join(DATA_DIR, 'ind-shed_word.dict.pkl')
 
 
 '''
