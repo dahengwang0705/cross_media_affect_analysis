@@ -3,6 +3,7 @@ Utility functions
 """
 
 import time
+import collections
 
 '''
 Template of news post_time string
@@ -82,6 +83,32 @@ def news_title_match(news_title, topic_keywords_lst, verbose=False, case_sensiti
             keywords_match = keywords_match and keyword_match
     if verbose: print('MATCH?: {}'.format(keywords_match), end='\n\n')
     return keywords_match
+
+
+def count_tweet_shed_words_freq(tweet_text, ind_shed_word_dict, shed_word_ind_dict, shed_words_set):
+    """
+    Count the frequency of selected Hedonometer words in tweet text.
+    
+    param tweet_text: String of text field of tweet
+    
+    return: dict of shed_word_ind to shed_word_freq mapping
+    """
+    
+    '''
+    Tokenize and count words in tweet text
+    
+    Ref
+     - 'We defined a word as any contiguous set of characters bounded by white space and/or a small set of punctuation characters.'
+     - 'We therefore included all misspellings, words from any language used on Twitter, hyperlinks, etc.'
+     - 'All pattern matches we made were case-insensitive, and we did not perform stemming.'
+    '''
+    tweet_text_words = tweet_text.lower().split()
+    counter = collections.Counter(tweet_text_words)
+    
+    tweet_shed_words_freq_dict = {int(shed_word_ind_dict[tweet_text_word]): int(tweet_text_word_freq)
+                                  for tweet_text_word, tweet_text_word_freq in list(counter.items()) if tweet_text_word in shed_words_set}
+    
+    return tweet_shed_words_freq_dict
 
 
 if '__main__' == __name__:
