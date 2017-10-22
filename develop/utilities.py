@@ -85,6 +85,7 @@ def news_title_match(news_title, topic_keywords_lst, verbose=False, case_sensiti
     return keywords_match
 
 
+# 20171019-daheng-build_shed_words_freq_dicts
 def count_tweet_shed_words_freq(tweet_text, ind_shed_word_dict, shed_word_ind_dict, shed_words_set):
     """
     Count the frequency of selected Hedonometer words in tweet text.
@@ -109,6 +110,30 @@ def count_tweet_shed_words_freq(tweet_text, ind_shed_word_dict, shed_word_ind_di
                                   for tweet_text_word, tweet_text_word_freq in list(counter.items()) if tweet_text_word in shed_words_set}
     
     return tweet_shed_words_freq_dict
+
+
+# 20171019-daheng-build_shed_words_freq_dicts
+def count_news_doc_shed_words_freq(news_doc, ind_shed_word_dict, shed_word_ind_dict, shed_words_set):
+    """
+    Similar to the 'count_tweet_shed_words_freq' function.
+    Count the frequency of selected Hedonometer words in news_doc field.
+    
+    param news_doc: String of news_doc field of a news article
+    
+    return: dict of shed_word_ind to shed_word_freq mapping
+    """
+    
+    # replace special new paragraph mark '::::::::' in news_doc field with white space
+    news_doc = news_doc.replace('::::::::', ' ')
+    
+    news_doc_words = news_doc.lower().split()
+    counter = collections.Counter(news_doc_words)
+    
+    news_doc_shed_words_freq_dict = {int(shed_word_ind_dict[news_doc_word]): int(news_doc_word_freq)
+                                     for news_doc_word, news_doc_word_freq in list(counter.items())
+                                     if news_doc_word in shed_words_set}
+    
+    return news_doc_shed_words_freq_dict
 
 
 if '__main__' == __name__:

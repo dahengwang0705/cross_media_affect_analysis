@@ -33,6 +33,9 @@ TOPICS_DOCS_DIR = os.path.join(HR_DIR, 'topics_docs')
 # http://hedonometer.org/index.html
 HED_DATA_DIR = os.path.join(DATA_DIR, 'hedonometer')
 
+# Directory of pkls for selected Hedonometer words frequency dicts on topic_tweets docs
+TOPICS_TWEETS_SHED_WORDS_FREQ_DICT_PKLS_DIR = os.path.join(DATA_DIR, 'topics_tweets_shed_words_freq_dict_pkls')
+
 
 '''
 Files
@@ -64,9 +67,8 @@ SHED_WORDS_DF_PKL = os.path.join(DATA_DIR, 'shed_words.df.pkl')
 SHED_WORD_IND_DICT_PKL = os.path.join(DATA_DIR, 'shed_word-ind.dict.pkl')
 IND_SHED_WORD_DICT_PKL = os.path.join(DATA_DIR, 'ind-shed_word.dict.pkl')
 
-# Pickles of dicts for selected Hedonometer words frequency in topic_news and topic_tweets docs
-TOPIC_NEWS_SHED_WORDS_FREQ_DICT_PKL = os.path.join(DATA_DIR, 'topic_news_shed_words_freq.dict.pkl')
-TOPIC_TWEETS_SHED_WORDS_FREQ_DICT_PKL = os.path.join(DATA_DIR, 'topic_tweets_shed_words_freq.dict.pkl')
+# Pickle of dict for selected Hedonometer words frequency on topic_news docs
+TOPICS_NEWS_SHED_WORDS_FREQ_DICT_PKL = os.path.join(DATA_DIR, 'topics_news_shed_words_freq.dict.pkl')
 
 
 '''
