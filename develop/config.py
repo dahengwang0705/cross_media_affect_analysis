@@ -67,6 +67,9 @@ SHED_WORDS_DF_PKL = os.path.join(DATA_DIR, 'shed_words.df.pkl')
 SHED_WORD_IND_DICT_PKL = os.path.join(DATA_DIR, 'shed_word-ind.dict.pkl')
 IND_SHED_WORD_DICT_PKL = os.path.join(DATA_DIR, 'ind-shed_word.dict.pkl')
 
+# Pickle of dict for mapping between and shed_word_ind and shed_word_happs
+IND_HAPPS_DICT_PKL = os.path.join(DATA_DIR, 'ind-happs.dict.pkl')
+
 # Pickle of dict for selected Hedonometer words frequency on topic_news docs
 TOPICS_NEWS_SHED_WORDS_FREQ_DICT_PKL = os.path.join(DATA_DIR, 'topics_news_shed_words_freq.dict.pkl')
 

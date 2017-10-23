@@ -136,6 +136,48 @@ def count_news_doc_shed_words_freq(news_doc, ind_shed_word_dict, shed_word_ind_d
     return news_doc_shed_words_freq_dict
 
 
+def merge_shed_words_freq_dicts(shed_words_freq_dicts_lst, verbose=False):
+    """
+    Merge a lst of shed_words_freq_dicts into a single shed_words_freq_dict
+    
+    param shed_words_freq_dicts_lst: a lst of shed_words_freq_dicts
+    
+    return: a single merged shed_words_freq_dict
+    """
+    merged_freq_counter = collections.Counter()
+    if verbose:
+        print('(FUNC) NUM OF DICTS: {}'.format(len(shed_words_freq_dicts_lst)))
+    
+    for shed_words_freq_dict in shed_words_freq_dicts_lst:
+        merged_freq_counter.update(collections.Counter(shed_words_freq_dict))
+    
+    return dict(merged_freq_counter)
+
+
+def compute_h_score(shed_words_freq_dict, shed_words_happs_dict, verbose=False):
+    """
+    Compute the happiness score given a shed_words_freq_dict and a shed_words_freq_dict
+    
+    param shed_words_freq_dict: dict of shed_word_ind to shed_word_freq mapping
+    param shed_words_happs_dict: dict of shed_word_ind to shed_word_happs mapping
+    
+    return: a single happiness score
+    """
+    total_len = sum(shed_words_freq_dict.values())
+    if verbose:
+        print('(FUNC) LEN: {}'.format(total_len))
+    
+    # intermediate dict for each shed word contribution to the last total happiness score
+    shed_words_contri_dict = {shed_word_ind: (shed_words_happs_dict[shed_word_ind] * (shed_words_freq / total_len)) 
+                              for shed_word_ind, shed_words_freq in list(shed_words_freq_dict.items())}
+    if verbose:
+        print('(FUNC) SHED WORDS CONTRIBUTIONS: {}'.format(shed_words_contri_dict))
+    
+    h_score = sum(shed_words_contri_dict.values())
+    
+    return h_score
+
+
 if '__main__' == __name__:
     """
     Tests on news_title_match() function
