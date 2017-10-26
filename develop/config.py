@@ -36,6 +36,9 @@ HED_DATA_DIR = os.path.join(DATA_DIR, 'hedonometer')
 # Directory of pkls for selected Hedonometer words frequency dicts on topic_tweets docs
 TOPICS_TWEETS_SHED_WORDS_FREQ_DICT_PKLS_DIR = os.path.join(DATA_DIR, 'topics_tweets_shed_words_freq_dict_pkls')
 
+# Directory for IBM tweets and news data
+IBM_TWEETS_NEWS_DIR = os.path.join(DATA_DIR, 'ibm_tweets_news')
+
 
 '''
 Files
@@ -132,7 +135,7 @@ MANUALLY_SELECTED_TOPICS_LST = [
     {'category': 'tragedy', 'name': 'Colorado_NAACP_bombing', 'keywords_lst': ['NAACP']},
     {'category': 'tragedy', 'name': 'FSU_shooting', 'keywords_lst': ['FSU']},
     {'category': 'tragedy', 'name': 'Chapel_Hill_shooting', 'keywords_lst': ['Chapel Hill']},
-    {'category': 'entertainment', 'name': 'Bobbi_Kristina_Brown_death', 'keywords_lst': ['Bobbi Kristina Brown']},
+    {'category': 'tragedy', 'name': 'Bobbi_Kristina_Brown_death', 'keywords_lst': ['Bobbi Kristina Brown']},
     {'category': 'tragedy', 'name': 'Taliban_Pakistan_school_massacre', 'keywords_lst': [('Pakistan', 'Taliban'), ('school', 'student', 'massacre')]},
     {'category': 'tragedy', 'name': 'American_ISIS_Hostage_Kayla_Mueller', 'keywords_lst': ['Kayla Mueller']},
     {'category': 'tragedy', 'name': 'TransAsia_Airways_Flight_GE235_crash', 'keywords_lst': [('TransAsia', 'Taiwan'), ('plane', 'crash', 'pilot', 'flight')]},

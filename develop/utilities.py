@@ -178,6 +178,21 @@ def compute_h_score(shed_words_freq_dict, shed_words_happs_dict, verbose=False):
     return h_score
 
 
+def clean_tweet_text(original_tweet_text):
+    """
+    Remove all URL and hashtag entities in the tweet_text
+    
+    param original_tweet_text: the original tweet_text field
+    
+    return: new tweet_text field with out any URL and hashtag
+    """
+    tweet_text_words = original_tweet_text.split()
+    filtered_tweet_text_words = [tweet_text_word for tweet_text_word in tweet_text_words
+                                 if not (tweet_text_word.startswith('http') or tweet_text_word.startswith('#'))]
+    
+    return ' '.join(filtered_tweet_text_words)
+
+
 if '__main__' == __name__:
     """
     Tests on news_title_match() function
