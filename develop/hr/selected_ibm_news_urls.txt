@@ -1,0 +1,43 @@
+
+engadget: 
+	('https://www.engadget.com/2017/04/07/ibm-watson-tech-support-round-the-clock/', 131)
+		('https://www.engadget.com/2017/04/07/ibm-watson-tech-support-round-the-clock/?utm_source=dlvr.it&utm_medium=twitter', 4)
+		('https://www.engadget.com/2017/04/07/ibm-watson-tech-support-round-the-clock/?sr_source=Twitter', 4)
+	('https://www.engadget.com/2017/04/25/ibm-watson-cognitive-photo-booth/', 93)
+	('https://www.engadget.com/2017/05/11/ibm-watson-voice-commands-to-star-trek-bridge-crew/', 52)
+	('https://www.engadget.com/2017/05/03/147-teams-will-compete-for-5-million-in-the-ibm-watson-xprize/', 42)
+
+venturebeat:
+	('http://venturebeat.com/2017/03/19/playfab-taps-ibms-watson-ai-for-deeper-insights-into-gamer-behavior/', 61)
+	('https://venturebeat.com/2017/05/11/ibm-watson-enables-voice-commands-in-ubisofts-star-trek-bridge-crew-virtual-reality-game/', 59)
+	('https://venturebeat.com/2017/04/04/ibm-watson-ai-will-help-spot-great-shots-at-the-masters-golf-tournament/', 56)
+	('http://venturebeat.com/2017/03/10/10-ways-you-may-have-already-used-ibm-watson/', 51)
+		('http://venturebeat.stfi.re/2017/03/10/10-ways-you-may-have-already-used-ibm-watson/?sf=pgxlyxw', 4)
+		('http://venturebeat.com/2017/03/10/10-ways-you-may-have-already-used-ibm-watson/?bt_ee=mP7FFHIJMYgapNwIpqzeY29ZmpJfLWFvLlHr1hkRk/IoMceJkIgB9E4wRGJcQZ+U&bt_ts=1489678259203', 4)
+	('https://venturebeat.com/2017/03/27/intel-just-painted-a-target-on-ibm-watsons-back/', 41)
+	('https://venturebeat.com/2017/05/09/ibm-watson-to-help-pebble-beach-create-a-virtual-concierge-for-guests/', 39)
+	('https://venturebeat.com/2017/02/16/ibm-watson-opens-200-million-iot-headquarters-in-munich/', 13)
+
+cnbc: 
+	('http://www.cnbc.com/2017/05/08/ibms-watson-is-a-joke-says-social-capital-ceo-palihapitiya.html', 77)
+		('https://www.cnbc.com/amp/2017/05/08/ibms-watson-is-a-joke-says-social-capital-ceo-palihapitiya.html', 6)
+		('http://video.cnbc.com/gallery/?video=3000616728', 31)
+		('http://www.cnbc.com/id/104454843', 21)
+	('http://www.cnbc.com/2017/05/17/ibm-powerful-supercomputer-watson-quantum-computer.html', 24)
+	('http://www.cnbc.com/2017/03/06/ibm-and-salesforce-shake-hands-on-artificial-intelligence.html', 7)
+		('http://video.cnbc.com/gallery/?video=3000598832', 7)
+	('http://www.cnbc.com/2017/05/09/no-joke-id-like-to-see-my-firm-go-head-to-head-with-ibm-on-a-i-palihapitiya.html', 4)
+
+
+wsj:
+	('https://www.wsj.com/articles/ibm-tests-watson-technology-to-keep-eye-on-traders-1493055558', 60)
+		('http://on.wsj.com/2pXeXF4', 15)
+		('http://on.wsj.com/2oIdot1', 7)
+		('http://on.wsj.com/2oEe96s', 6)
+		('http://on.wsj.com/2pYoIFW', 4)
+	('https://www.wsj.com/articles/ibm-salesforce-agree-to-partner-on-artificial-intelligence-1488834910', 34)
+	('https://www.wsj.com/articles/ibm-profit-falls-13-despite-gains-from-cloud-services-watson-1492547508', 19)
+		('https://www.wsj.com/articles/ibm-profit-falls-13-despite-gains-from-cloud-services-watson-1492547508?mod=pls_whats_news_us_business_f', 5)
+	('https://blogs.wsj.com/cio/2017/05/08/staples-to-launch-ai-powered-office-assistant/', 19)
+		('http://on.wsj.com/2qTqJnm', 13)
+	('https://www.wsj.com/articles/hospital-stumbles-in-bid-to-teach-a-computer-to-treat-cancer-1488969011', 14)
